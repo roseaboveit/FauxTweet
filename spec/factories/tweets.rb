@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :tweet do
-    message "MyText"
-    author "MyString"
+    message "Tweet Message"
+    author "Guest"
   end
 end
