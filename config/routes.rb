@@ -1,4 +1,9 @@
 FauxTweet::Application.routes.draw do
+  get "/tweets/new" => "tweets#new"
+  get "/tweets/:id/" => "tweets#show", as: "tweet"
+  get "/tweets" => "tweets#index"
+  post "/tweets/" => "tweets#create"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

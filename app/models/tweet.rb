@@ -1,4 +1,4 @@
 class Tweet < ActiveRecord::Base
-	validate :message, presence: true
-	validate :author, presence: true
+	validates :message, presence: true, length: { maximum:140 }
+	validates :author, presence: true
 end
